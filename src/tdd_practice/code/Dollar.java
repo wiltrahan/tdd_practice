@@ -1,9 +1,7 @@
-package tdd_practice.tests;
+package tdd_practice.code;
 
-public class Dollar {
-	
-	int amount;
-	
+public class Dollar extends Money {
+		
 	public Dollar(int amount) {
 		this.amount = amount;
 	}
@@ -11,5 +9,6 @@ public class Dollar {
 	public Dollar times(int multiplier) {
 		return new Dollar(amount * multiplier);
 	}
+	
 
 }
