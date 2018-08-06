@@ -35,5 +35,6 @@ public class StringCalculatorTest {
 		assertEquals(stringCalc.add("5,10,10"), 25);
 		assertEquals(stringCalc.add("5,10,10,30"), 55);
 	}
+	
 
 }
