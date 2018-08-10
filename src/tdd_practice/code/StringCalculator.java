@@ -17,7 +17,4 @@ public class StringCalculator {
 			return total;
 		}
 	}
-	
-	
-	
 }
