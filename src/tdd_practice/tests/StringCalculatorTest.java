@@ -51,13 +51,9 @@ public class StringCalculatorTest {
 	
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
-	
 	@Test
 	public void testForExceptionThrownDueToNegativeNumber() throws Exception {
-		
-		//thrown.expect(Exception.class);
-		thrown.expectMessage("negatives not allowed");
-		
+		thrown.expectMessage("negatives not allowed");		
 		_stringCalc.add("2,-5,99");
 	}
 	

@@ -14,11 +14,9 @@ public class StringCalculator {
 		String[] numArray = numbers.split("[,\n]");
 		
 		for(int i = 0; i < numArray.length; i++) {
-			
 			if(Integer.parseInt(numArray[i]) < 0) {
-				throw new Exception("negatives not allowed");
+				throw new Exception("negatives not allowed: " + numArray[i]);
 			}
-			
 			total += Integer.parseInt(numArray[i]);
 		}
 		return total;
