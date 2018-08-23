@@ -41,8 +41,7 @@ public class BankAccountTest {
 	
 	@Test(expected = IllegalArgumentException.class)
 	public void cannotWithdrawFromBranch() throws Exception {
-		double balance = account.withdraw(600, false);
-		assertEquals(400, balance, 0);
+		account.withdraw(600, false);
 	}
 	
 	@Test
