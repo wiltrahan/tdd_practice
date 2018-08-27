@@ -30,7 +30,7 @@ public class BankAccountTestParameterized {
 	@Before
 	public void setup() {
 		account = new BankAccount("Wil", "Trahan", 1000.00, BankAccount.CHECKING);
-		System.out.println("Running a test...");
+		System.out.println("Running a Param test...");
 	}
 	
 	@Parameterized.Parameters
